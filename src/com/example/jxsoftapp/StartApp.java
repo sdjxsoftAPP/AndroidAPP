@@ -23,7 +23,7 @@ public class StartApp extends Activity {
 		super.onCreate(savedInstanceState);
 		views=View.inflate(this, R.layout.startapp, null);
 		setContentView(views);
-		//AlphaActivtity.alphaDraw(1.0f, 0.3f, 5000, view, interfaceCls);
+	
 	}
 	
 	public void skipPage()
