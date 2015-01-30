@@ -16,35 +16,14 @@ import android.view.View;
  *
  */
 public class StartApp extends Activity {
+	private View views;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO 自动生成的方法存根
 		super.onCreate(savedInstanceState);
-		View view=findViewById(R.layout.startapp);
-		setContentView(view);
-		InterfaceCls interfaceCls=new InterfaceCls() {
-			
-			@Override
-			public void execStartAlphaAnimation() {
-				// TODO 自动生成的方法存根
-				
-			}
-			
-			@Override
-			public void execRepeatAlphaAnimation() {
-				// TODO 自动生成的方法存根
-				
-			}
-			
-			@Override
-			public void execEndAlphaAnimation() {
-				// TODO 自动生成的方法存根
-				skipPage();
-			}
-		};
-		skipPage();
+		views=View.inflate(this, R.layout.startapp, null);
+		setContentView(views);
 		//AlphaActivtity.alphaDraw(1.0f, 0.3f, 5000, view, interfaceCls);
-		
 	}
 	
 	public void skipPage()
